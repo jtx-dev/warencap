@@ -3,7 +3,7 @@ from discord.ext import commands
 from spanlp.palabrota import Palabrota
 import os
 import webserver
-DISCORD_TOKEN = os.getenv("MODERADOR_TOKEN")
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 palabrota = Palabrota(censor_char="*", exclude="weon")
 intents = discord.Intents.default()
