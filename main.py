@@ -11,7 +11,7 @@ MAX_ADVERTENCIAS = 3  # Define el número máximo de advertencias antes del mute
 
 advertencias = {}
 muteados = {}
-palabrota = Palabrota(censor_char="*", exclude="weon")
+palabrota = Palabrota(censor_char="*", exclude={"weon", "mano"})
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='w:', intents=intents)
